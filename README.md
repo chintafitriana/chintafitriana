@@ -38,7 +38,7 @@ _php spark serve_
 Sehingga muncul localhost berikut, yang dapat anda klik dengan menekan tombol _Ctrl + arahkan ke link, lalu klik_:
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/82fc8ae1-adab-4466-a440-95654961ccd5)
 Dan akan mengarahkan pada halaman default codeigniter4, seperti berikut: <br>
-
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/421518a3-0157-40e3-9a7b-74e538f90917)
 
 
 3. **Setting Development Mode** <br>
@@ -153,10 +153,49 @@ yang berisi tulisan _Ini contoh hasil routing_ dari sintaks test.php berikut: <b
 
 9. **Database Migration** <br>
 Migrasi database adalah perpindahan database dari suatu tempat ke tempat yang lain. Cara ini efektif apabila ingin berganti server.
-Misalnya PT 1 dengan PT 2 akan melakukan perpindahan lokasi penyimpanan data pada server yang digunakan, maka cara ini akan membantu anda dalam melakukannya.
+Misalnya PT 1 dengan PT 2 akan melakukan perpindahan lokasi penyimpanan data pada server yang digunakan, maka cara ini akan membantu anda dalam melakukannya.<br>
+Pada migrasi database ada beberapa _command_ yang dapat digunakan, diantaranya yaitu: <br>
+a) db:create untuk membuat database baru,<br>
+```
+php spark db:create NamaDatabase
+```
+b) db:table untuk melihat informasi tabel,<br>
+```
+php spark db:table NamaTabel
+```
+c) db:seed untuk membuat data awal,<br>
+```
+php spark db:seed NamaSeeder
+```
+d) migrate untuk melakukan migrasi (menjalankan method up()),<br>
+```
+php spark migrate
+```
+e) migrate:create atau make:migration untuk membuat file migrasi,<br>
+```
+php spark make:migration NamaMigration
+```
+f) migrate:refresh untuk melakukan rollback dan melakukan migrasi perubahan terbaru,<br>
+```
+php spark migrate:refresh
+```
+g) migrate:rollback untuk melakukan rollback pada versi tertentu (menjalankan method down()),<br>
+```
+php spark migrate:rollback
+```
+h) migrate:status untuk melihat status migrasi,<br>
+```
+php spark migrate:status
+```
+i) make:seeder untuk membuat file seeder.<br>
+```
+php spark make:seeder NamaSeeder
+```
 Berikut langkah-langkah migrasi database: <br>
+
 - 
-- 
+
+
 Selain menggunakan cara **_Migrasi Database_**, anda dapat melakukannya secara manual pada database anda dengan cara export database pada server lama anda
 lalu import database pada server baru anda. Cara ini tergolong cukup ribet karena apabila ada banyak database tidak akan maksimmal dalam melakukannya dan tidak efisien karena terlalu lama.
 
