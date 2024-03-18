@@ -45,7 +45,7 @@ CI_ENVIRONMENT = development
 # APP
 #--------------------------------------------------------------------
 ```
-Fungsi dari mengubah dari production ke development adalah untuk memudahkan debugging pada saat error, berikut contoh tampilan dari debugging. <br>
+Fungsi mengubah dari production ke development adalah untuk memudahkan debugging pada saat error, berikut contoh tampilan dari debugging. <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/928704ed-c032-4d5a-b81c-3bd0e82e0a4f)
 
 4. **Struktur Folder** <br>
@@ -79,11 +79,14 @@ $routes->get('/faqs', 'Page::faqs');
 $routes->get('/news', 'News::index');
 ```
 
-7. **Model**
-8. **Views**
-9. **Controller**
-10. **Database Migration**
-11. **Membuat CRUD (Model)**
+7. **Model** <br>
+Model bertanggung jawab untuk berinteraksi dengan database atau sumber daya data lainnya. Ini dapat mencakup operasi seperti pengambilan, penambahan, pembaruan, dan penghapusan data. Model juga dapat berisi metode khusus untuk memperoleh dan memanipulasi data sesuai kebutuhan aplikasi. Untuk membuat model pada codeigniter4 ini dapat dibuat pada direktori _**app > Model**_ lalu buat model sesuai yang anda inginkan. Pada contoh kali ini saya membuat model NewsModel.php. <br>
+
+   
+9. **Views**
+10. **Controller**
+11. **Database Migration**
+12. **Membuat CRUD (Model)**
 
 
 
