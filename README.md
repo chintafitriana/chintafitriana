@@ -96,11 +96,11 @@ class TestModel extends Model
 }
 ```
    
-8. **Views** <br>
+7. **Views** <br>
 View adalah bagian dari aplikasi yang menangani tampilan atau antarmuka pengguna. Tampilan berfungsi untuk menampilkan informasi kepada pengguna dan menerima input dari mereka. Dalam CodeIgniter, tampilan biasanya berupa file-template yang berisi markup HTML atau bahasa template lainnya yang memungkinkan penggunaan variabel dan logika sederhana untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini dapat dibuat pada direktori _**app > Views**_ lalu buat views sesuai yang anda inginkan. Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php. <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b5604adb-3c82-46cf-a62b-4faece4eae52)
 
-9. **Controller**<br>
+8. **Controller**<br>
 Controller bertindak sebagai penghubung antara Model dan View. Controller mengelola logika aplikasi, menerima input dari pengguna melalui permintaan HTTP, dan memberikan respons yang sesuai. Controller digunakan untuk memproses permintaan, berinteraksi dengan Model untuk mengambil atau memanipulasi data, dan memilih tampilan yang akan ditampilkan kepada pengguna. Untuk membuat controller pada codeigniter4 ini dapat dibuat pada direktori _**app > Controllers**_ lalu buat controller sesuai yang anda inginkan. Pada contoh kali ini saya membuat controller _**Test.php.**_ <br>
 Sintaks controller:
 ```
@@ -131,12 +131,12 @@ Fungsi dari _**return view('test');**_ adalah untuk menampilkan halaman test.php
 </div>
 ```
 
-10. **Database Migration** <br>
+9. **Database Migration** <br>
 Migrasi database adalah perpindahan database dari suatu tempat ke tempat yang lain. Cara ini efektif apabila ingin berganti server. Misalnya PT 1 dengan PT 2 akan melakukan perpindahan lokasi penyimpanan data pada server yang digunakan, maka cara ini akan membantu anda dalam melakukannya. Berikut langkah-langkah migrasi database: <br>
 - 
 - 
 Selain menggunakan cara **_Migrasi Database_**, anda dapat melakukannya secara manual pada database anda dengan cara export database pada server lama anda lalu import database pada server baru anda. Cara ini tergolong cukup ribet karena apabila ada banyak database tidak akan maksimmal dalam melakukannya dan tidak efisien karena terlalu lama.
-11. **Membuat CRUD (Model)**
+10. **Membuat CRUD (Model)**
 
 
 
