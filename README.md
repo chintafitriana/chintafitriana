@@ -30,9 +30,14 @@ _composer create-project codeigniter4/appstarter nama_fileproject_
  <br> 
 Serta jangan lupa untuk mengubah root pada laragon/xampp yang anda gunakan agar dapat running di web server nantinya. <br> 
 Lalu ketikkan sintaks berikut untuk running aplikasi web anda melalui localhost yang disediakan. <br>
-Untuk running localhost dapat menggunakan sintaks berikut: <br>
+Untuk running localhost dapat menggunakan sintaks berikut yang dapat di tuliskan pada terminal anda: <br>
 
+```
+_php spark serve_
+```
 Sehingga muncul localhost berikut, yang dapat anda klik dengan menekan tombol _Ctrl + arahkan ke link, lalu klik_:
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/82fc8ae1-adab-4466-a440-95654961ccd5)
+Dan akan mengarahkan pada halaman default codeigniter4, seperti berikut: <br>
 
 
 
