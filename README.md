@@ -31,7 +31,7 @@ Serta jangan lupa untuk mengubah root pada laragon/xampp yang anda gunakan agar 
 
 4. **Setting Development Mode** <br>
 Dalam CodeIgniter 4, Anda dapat mengatur mode pengembangan (development mode) dengan mengubah nilai konstanta CI_ENVIRONMENT pada file .env di folder proyek. Fungsi file .env merupakan file konfigurasi yang digunakan untuk menyimpan variabel lingkungan (environment variables) yang digunakan oleh aplikasi. Berikut contoh gambarnya, sintaks asli bawaan dari ci4 saat pertama kali instal adalah terdapat tanda # pada awalan, hapus tanda # agar memulai mode development. <br>
-![Contoh Gambar](https://i.imgur.com/HlNRqME)
+
 
 6. **Struktur Folder** <br>
 Codeigniter4 dikenal dengan konsep MVC nya (Models, View, Controller) Struktur folder pada codeigniter4 meliputi: <br>
