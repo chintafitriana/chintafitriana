@@ -81,7 +81,7 @@ $routes->get('/test', 'Test::test');
 
 6. **Model** <br>
 Model bertanggung jawab untuk berinteraksi dengan database atau sumber daya data lainnya. Ini dapat mencakup operasi seperti pengambilan, penambahan, pembaruan, dan penghapusan data. Model juga dapat berisi metode khusus untuk memperoleh dan memanipulasi data sesuai kebutuhan aplikasi. Untuk membuat model pada codeigniter4 ini dapat dibuat pada direktori _**app > Model**_ lalu buat model sesuai yang anda inginkan. Pada contoh kali ini saya membuat model _**TestModel.php.**_ <br>
-![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/3c52eb2b-6416-47fb-9952-ae10f7d7628f) <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/9ff13e8d-2dc3-459e-8ef4-0c5100e9c3fe) <br>
 Sintaks TestModel.php: 
 ```
 <?php
@@ -97,8 +97,7 @@ class TestModel extends Model
 ```
    
 8. **Views** <br>
-View adalah bagian dari aplikasi yang menangani tampilan atau antarmuka pengguna. Tampilan berfungsi untuk menampilkan informasi kepada pengguna dan menerima input dari mereka. Dalam CodeIgniter, tampilan biasanya berupa file-template yang berisi markup HTML atau bahasa template lainnya yang memungkinkan penggunaan variabel dan logika sederhana untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini dapat dibuat pada direktori _**app > Views**_ lalu buat views sesuai yang anda inginkan. Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php.
-Output _**test.php:**_ <br>
+View adalah bagian dari aplikasi yang menangani tampilan atau antarmuka pengguna. Tampilan berfungsi untuk menampilkan informasi kepada pengguna dan menerima input dari mereka. Dalam CodeIgniter, tampilan biasanya berupa file-template yang berisi markup HTML atau bahasa template lainnya yang memungkinkan penggunaan variabel dan logika sederhana untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini dapat dibuat pada direktori _**app > Views**_ lalu buat views sesuai yang anda inginkan. Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php. <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b5604adb-3c82-46cf-a62b-4faece4eae52)
 
 9. **Controller**<br>
