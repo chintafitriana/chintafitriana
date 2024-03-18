@@ -5,7 +5,7 @@ Nama: Chinta Sejatining Fitriana,
 NPM: 220102079,
 Kelas: TI 2D
 
-10 Poin ringkasan dari dokumentasi codeigniter4
+10 Poin ringkasan dari dokumentasi codeigniter4 versi saya 😁
 
 1. **Welcome to codeigniter,** <br>
 CodeIgniter adalah kerangka kerja (framework) aplikasi web yang ditulis dalam bahasa pemrograman PHP. Ini adalah salah satu kerangka kerja PHP yang populer dan digunakan secara luas oleh para pengembang untuk mempercepat pengembangan aplikasi web. <br>
@@ -70,25 +70,70 @@ Routing adalah proses menghubungkan URL yang diterima oleh aplikasi web dengan t
 a) Routes adalah kumpulan definisi routing. <br>
 b) Router adalah script yang menentukan routing. <br>
 c) Routing adalah proses menemtukan rute atau url yang dituju. <br>
-Routing bisa di edit pada direktori **_app > Config > Routes.php_**
-Contoh penulisan sintaks route: <br>
+Routing bisa di edit pada direktori **_app > Config > Routes.php_**<br>
+Contoh penulisan sintaks route:
 ```
-$routes->get('/about', 'Page::about');
-$routes->get('/contact', 'Page::contact');
-$routes->get('/faqs', 'Page::faqs');
-$routes->get('/news', 'News::index');
+//untuk dashboard bawaan ci4
+$routes->get('/', 'Home::index');
+//untuk masuk ke page test
+$routes->get('/test', 'Test::test');
 ```
 
-7. **Model** <br>
-Model bertanggung jawab untuk berinteraksi dengan database atau sumber daya data lainnya. Ini dapat mencakup operasi seperti pengambilan, penambahan, pembaruan, dan penghapusan data. Model juga dapat berisi metode khusus untuk memperoleh dan memanipulasi data sesuai kebutuhan aplikasi. Untuk membuat model pada codeigniter4 ini dapat dibuat pada direktori _**app > Model**_ lalu buat model sesuai yang anda inginkan. Pada contoh kali ini saya membuat model NewsModel.php. <br>
-![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/3c52eb2b-6416-47fb-9952-ae10f7d7628f)
+6. **Model** <br>
+Model bertanggung jawab untuk berinteraksi dengan database atau sumber daya data lainnya. Ini dapat mencakup operasi seperti pengambilan, penambahan, pembaruan, dan penghapusan data. Model juga dapat berisi metode khusus untuk memperoleh dan memanipulasi data sesuai kebutuhan aplikasi. Untuk membuat model pada codeigniter4 ini dapat dibuat pada direktori _**app > Model**_ lalu buat model sesuai yang anda inginkan. Pada contoh kali ini saya membuat model _**TestModel.php.**_ <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/3c52eb2b-6416-47fb-9952-ae10f7d7628f) <br>
+Sintaks TestModel.php: 
+```
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class TestModel extends Model
+{
+    // ...
+}
+```
    
-9. **Views** <br>
-View adalah bagian dari aplikasi yang menangani tampilan atau antarmuka pengguna. Tampilan berfungsi untuk menampilkan informasi kepada pengguna dan menerima input dari mereka. Dalam CodeIgniter, tampilan biasanya berupa file-template yang berisi markup HTML atau bahasa template lainnya yang memungkinkan penggunaan variabel dan logika sederhana untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini dapat dibuat pada direktori _**app > Views**_ lalu buat views sesuai yang anda inginkan. Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php <br>
+8. **Views** <br>
+View adalah bagian dari aplikasi yang menangani tampilan atau antarmuka pengguna. Tampilan berfungsi untuk menampilkan informasi kepada pengguna dan menerima input dari mereka. Dalam CodeIgniter, tampilan biasanya berupa file-template yang berisi markup HTML atau bahasa template lainnya yang memungkinkan penggunaan variabel dan logika sederhana untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini dapat dibuat pada direktori _**app > Views**_ lalu buat views sesuai yang anda inginkan. Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php.
+Output _**test.php:**_ <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b5604adb-3c82-46cf-a62b-4faece4eae52)
 
-10. **Controller**
-11. **Database Migration**
-12. **Membuat CRUD (Model)**
+9. **Controller**<br>
+Controller bertindak sebagai penghubung antara Model dan View. Controller mengelola logika aplikasi, menerima input dari pengguna melalui permintaan HTTP, dan memberikan respons yang sesuai. Controller digunakan untuk memproses permintaan, berinteraksi dengan Model untuk mengambil atau memanipulasi data, dan memilih tampilan yang akan ditampilkan kepada pengguna. Untuk membuat controller pada codeigniter4 ini dapat dibuat pada direktori _**app > Controllers**_ lalu buat controller sesuai yang anda inginkan. Pada contoh kali ini saya membuat controller _**Test.php.**_ <br>
+Sintaks controller:
+```
+<?php
+
+namespace App\Controllers;
+
+use CodeIgniter\HTTP\RequestInterface;
+use CodeIgniter\HTTP\ResponseInterface;
+use Psr\Log\LoggerInterface;
+
+class Test extends BaseController
+{
+    public function test()
+    {
+        return view('test'); // Menggunakan "return" daripada "echo"
+    }
+}
+```
+Fungsi dari _**return view('test');**_ adalah untuk menampilkan halaman test.php yang ada pada direktori **app / view** yang berisi tulisan _Ini contoh hasil routing_ dari sintaks test.php berikut: <br>
+```
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p>Ini contoh hasil routing</p>
+        </div>
+    </div>
+</div>
+```
+
+10. **Database Migration** 
+11. **Membuat CRUD (Model)**
 
 
 
