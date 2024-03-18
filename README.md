@@ -159,26 +159,39 @@ a) db:create untuk membuat database baru,<br>
 ```
 php spark db:create NamaDatabase
 ```
+Output: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b18dbdff-8172-44fb-8283-2f2f10a6944a)
+
 b) db:table untuk melihat informasi tabel,<br>
 ```
 php spark db:table NamaTabel
 ```
+Output: <br>
+
 c) db:seed untuk membuat data awal,<br>
 ```
 php spark db:seed NamaSeeder
 ```
+Output: <br>
+
 d) migrate untuk melakukan migrasi (menjalankan method up()),<br>
 ```
 php spark migrate
 ```
+Output: <br>
+
 e) migrate:create atau make:migration untuk membuat file migrasi,<br>
 ```
 php spark make:migration NamaMigration
 ```
+Output: <br>
+
 f) migrate:refresh untuk melakukan rollback dan melakukan migrasi perubahan terbaru,<br>
 ```
 php spark migrate:refresh
 ```
+Output: <br>
+
 g) migrate:rollback untuk melakukan rollback pada versi tertentu (menjalankan method down()),<br>
 ```
 php spark migrate:rollback
