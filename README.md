@@ -19,10 +19,10 @@ Codeigniter ramai digunakan oleh para pengembang software saat ini karena bebera
   
 2. **Instalasi** <br>
 Terdapat 2 cara instalasi framework codeigniter 4, diantaranya yaitu: <br>
-a) Manual <br>
+a) **Manual** <br>
 Unduh file CodeIgniter 4 dari situs web resmi www.codeigniter.com, lalu ekstrak file tersebut. <br>
 
-   b) Composer <br>
+   b) **Composer** <br>
   Gunakan Composer dengan perintah untuk membuat proyek CodeIgniter baru. <br>
 ```
 _composer create-project codeigniter4/appstarter nama_fileproject_
@@ -60,28 +60,28 @@ Fungsi mengubah dari production ke development adalah untuk memudahkan debugging
 
 4. **Struktur Folder** <br>
 Codeigniter4 dikenal dengan konsep MVC nya (Models, View, Controller) Struktur folder pada codeigniter4 meliputi:<br>
-a) app <br>
-- Controllers: Berisi file-controller yang mengatur logika aplikasi dan berinteraksi dengan Model dan View. <br>
-- Models: Berisi file-model yang mengelola logika bisnis dan akses data.<br>
-- Views: Berisi file-view yang menampilkan tampilan halaman web.<br>
-- Config: Berisi file konfigurasi untuk aplikasi, seperti pengaturan database, rute, dan lainnya.<br>
-- Helpers: Berisi file-helper yang berisi fungsi-fungsi bantu yang dapat digunakan di seluruh aplikasi.<br>
-- Libraries: Berisi file-libraries yang menyediakan fungsionalitas tambahan untuk aplikasi.<br>
-- Migrations: Berisi file migrasi database untuk mengelola perubahan skema database.<br>
-- Seeds: Berisi file-seeder yang digunakan untuk mengisi data awal ke dalam database.<br>
-b) public: Berisi file publik seperti CSS, JavaScript, gambar, dan file statis lainnya yang dapat diakses secara langsung oleh browser.<br>
-c) system: Berisi file inti CodeIgniter yang memproses permintaan dan mengatur aliran aplikasi.<br>
-d) writable: Direktori yang digunakan untuk menyimpan file yang dapat ditulis oleh aplikasi, seperti file log, file sesi, dan file cache.<br>
-e) tests: Berisi file pengujian aplikasi menggunakan PHPUnit.<br>
-f) vendor: Direktori yang berisi dependensi pihak ketiga yang diinstal melalui Composer.<br>
+a) **app** <br>
+- _Controllers_: Berisi file-controller yang mengatur logika aplikasi dan berinteraksi dengan Model dan View. <br>
+- _Models_: Berisi file-model yang mengelola logika bisnis dan akses data.<br>
+- _Views_: Berisi file-view yang menampilkan tampilan halaman web.<br>
+- _Config_: Berisi file konfigurasi untuk aplikasi, seperti pengaturan database, rute, dan lainnya.<br>
+- _Helpers_: Berisi file-helper yang berisi fungsi-fungsi bantu yang dapat digunakan di seluruh aplikasi.<br>
+- _Libraries_: Berisi file-libraries yang menyediakan fungsionalitas tambahan untuk aplikasi.<br>
+- _Migrations_: Berisi file migrasi database untuk mengelola perubahan skema database.<br>
+- _Seeds_: Berisi file-seeder yang digunakan untuk mengisi data awal ke dalam database.<br>
+b) **public**: Berisi file publik seperti CSS, JavaScript, gambar, dan file statis lainnya yang dapat diakses secara langsung oleh browser.<br>
+c) **system**: Berisi file inti CodeIgniter yang memproses permintaan dan mengatur aliran aplikasi.<br>
+d) **writable**: Direktori yang digunakan untuk menyimpan file yang dapat ditulis oleh aplikasi, seperti file log, file sesi, dan file cache.<br>
+e) **tests**: Berisi file pengujian aplikasi menggunakan PHPUnit.<br>
+f) **vendor**: Direktori yang berisi dependensi pihak ketiga yang diinstal melalui Composer.<br>
 
 5. **Routing** <br>
 Routing adalah proses menghubungkan URL yang diterima oleh aplikasi web dengan tindakan atau fungsi tertentu yang harus dilakukan oleh aplikasi tersebut.
 Dalam kerangka kerja web CodeIgniter, routing digunakan untuk menentukan bagaimana URL yang dikirim oleh pengguna akan diarahkan ke fungsi atau metode yang sesuai dalam aplikasi.
 Pada codeigniter, terdapat 3 istilah mengenai route diantaranya yaitu: <br>
-a) Routes adalah kumpulan definisi routing. <br>
-b) Router adalah script yang menentukan routing. <br>
-c) Routing adalah proses menemtukan rute atau url yang dituju. <br>
+a) _Routes_ adalah kumpulan definisi routing. <br>
+b) _Router_ adalah script yang menentukan routing. <br>
+c) _Routing_ adalah proses menemtukan rute atau url yang dituju. <br>
 Routing bisa di edit pada direktori **_app > Config > Routes.php_**<br>
 Contoh penulisan sintaks route:
 ```
