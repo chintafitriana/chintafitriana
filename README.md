@@ -160,7 +160,16 @@ a) db:create untuk membuat database baru,<br>
 php spark db:create NamaDatabase
 ```
 Output: <br>
-![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b18dbdff-8172-44fb-8283-2f2f10a6944a)
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b18dbdff-8172-44fb-8283-2f2f10a6944a) <br>
+Sintaks berikut digunakan untuk membat file migrasi yang akan diletakkan pada **_app > Database > Migrations > file_migrasi_** <br>
+```
+php spark migrate:create test
+```
+Output: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/64804c36-302a-4f92-b524-5dca7fe0400f) <br>
+Maka akan berada pada direktori berikut: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/f56b80a6-30e7-49d6-94ec-1ea452bfb13b)
+
 
 b) db:table untuk melihat informasi tabel,<br>
 ```
