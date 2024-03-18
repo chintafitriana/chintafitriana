@@ -202,6 +202,13 @@ f) migrate:refresh untuk melakukan rollback dan melakukan migrasi perubahan terb
 ```
 php spark migrate:refresh
 ```
+Output: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/efcdd8fa-37ae-4d7f-998e-1b5c7a66df1d)
+Pada kode migrasi tadi, tambahkan sintaks berikut: <br>
+```
+'created_at DATETIME DEFAULT CURRENT_TIMESTAMP'
+```
+Agar muncul pada tanggal terbaru. Lalu lanjutkan dengan perintah rollback berikut. <br>
 g) migrate:rollback untuk melakukan rollback pada versi tertentu (menjalankan method down()),<br>
 ```
 php spark migrate:rollback
