@@ -8,7 +8,8 @@ Kelas: TI 2D
 10 Poin ringkasan dari dokumentasi codeigniter4 versi saya 😁
 
 1. **Welcome to codeigniter,** <br>
-CodeIgniter adalah kerangka kerja (framework) aplikasi web yang ditulis dalam bahasa pemrograman PHP. Ini adalah salah satu kerangka kerja PHP yang populer dan digunakan secara luas oleh para pengembang untuk mempercepat pengembangan aplikasi web. <br>
+CodeIgniter adalah kerangka kerja (framework) aplikasi web yang ditulis dalam bahasa pemrograman PHP.
+Ini adalah salah satu kerangka kerja PHP yang populer dan digunakan secara luas oleh para pengembang untuk mempercepat pengembangan aplikasi web. <br>
 Codeigniter ramai digunakan oleh para pengembang software saat ini karena beberapa keuntungan yang didapatkan, diantaranya yaitu: <br>
   - Konfigurasi mudah <br>
   - Kinerja yang cepat <br>
@@ -29,12 +30,16 @@ _composer create-project codeigniter4/appstarter nama_fileproject_
  <br> 
 Serta jangan lupa untuk mengubah root pada laragon/xampp yang anda gunakan agar dapat running di web server nantinya. <br> 
 Lalu ketikkan sintaks berikut untuk running aplikasi web anda melalui localhost yang disediakan. <br>
-```
+Untuk running localhost dapat menggunakan sintaks berikut: <br>
 
-```
+Sehingga muncul localhost berikut, yang dapat anda klik dengan menekan tombol _Ctrl + arahkan ke link, lalu klik_:
+
+
 
 3. **Setting Development Mode** <br>
-Dalam CodeIgniter 4, Anda dapat mengatur mode pengembangan (development mode) dengan mengubah nilai konstanta CI_ENVIRONMENT pada file .env di folder proyek. Fungsi file .env merupakan file konfigurasi yang digunakan untuk menyimpan variabel lingkungan (environment variables) yang digunakan oleh aplikasi. Berikut contoh gambarnya, sintaks asli bawaan dari ci4 saat pertama kali instal adalah terdapat tanda # pada awalan, hapus tanda # agar memulai mode development. <br>
+Dalam CodeIgniter 4, Anda dapat mengatur mode pengembangan (development mode) dengan mengubah nilai konstanta CI_ENVIRONMENT pada file .env di folder proyek.
+Fungsi file .env merupakan file konfigurasi yang digunakan untuk menyimpan variabel lingkungan (environment variables) yang digunakan oleh aplikasi.
+Berikut contoh gambarnya, sintaks asli bawaan dari ci4 saat pertama kali instal adalah terdapat tanda # pada awalan, hapus tanda # agar memulai mode development. <br>
 ```
 # ENVIRONMENT
 #--------------------------------------------------------------------
@@ -66,7 +71,9 @@ e) tests: Berisi file pengujian aplikasi menggunakan PHPUnit.<br>
 f) vendor: Direktori yang berisi dependensi pihak ketiga yang diinstal melalui Composer.<br>
 
 5. **Routing** <br>
-Routing adalah proses menghubungkan URL yang diterima oleh aplikasi web dengan tindakan atau fungsi tertentu yang harus dilakukan oleh aplikasi tersebut. Dalam kerangka kerja web CodeIgniter, routing digunakan untuk menentukan bagaimana URL yang dikirim oleh pengguna akan diarahkan ke fungsi atau metode yang sesuai dalam aplikasi. Pada codeigniter, terdapat 3 istilah mengenai route diantaranya yaitu: <br>
+Routing adalah proses menghubungkan URL yang diterima oleh aplikasi web dengan tindakan atau fungsi tertentu yang harus dilakukan oleh aplikasi tersebut.
+Dalam kerangka kerja web CodeIgniter, routing digunakan untuk menentukan bagaimana URL yang dikirim oleh pengguna akan diarahkan ke fungsi atau metode yang sesuai dalam aplikasi.
+Pada codeigniter, terdapat 3 istilah mengenai route diantaranya yaitu: <br>
 a) Routes adalah kumpulan definisi routing. <br>
 b) Router adalah script yang menentukan routing. <br>
 c) Routing adalah proses menemtukan rute atau url yang dituju. <br>
@@ -80,7 +87,9 @@ $routes->get('/test', 'Test::test');
 ```
 
 6. **Model** <br>
-Model bertanggung jawab untuk berinteraksi dengan database atau sumber daya data lainnya. Ini dapat mencakup operasi seperti pengambilan, penambahan, pembaruan, dan penghapusan data. Model juga dapat berisi metode khusus untuk memperoleh dan memanipulasi data sesuai kebutuhan aplikasi. Untuk membuat model pada codeigniter4 ini dapat dibuat pada direktori _**app > Model**_ lalu buat model sesuai yang anda inginkan. Pada contoh kali ini saya membuat model _**TestModel.php.**_ <br>
+Model bertanggung jawab untuk berinteraksi dengan database atau sumber daya data lainnya. Ini dapat mencakup operasi seperti pengambilan, penambahan, pembaruan, dan penghapusan data.
+Model juga dapat berisi metode khusus untuk memperoleh dan memanipulasi data sesuai kebutuhan aplikasi. Untuk membuat model pada codeigniter4 ini dapat dibuat pada direktori _**app > Model**_
+lalu buat model sesuai yang anda inginkan. Pada contoh kali ini saya membuat model _**TestModel.php.**_ <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/9ff13e8d-2dc3-459e-8ef4-0c5100e9c3fe) <br>
 Sintaks TestModel.php: 
 ```
@@ -97,11 +106,16 @@ class TestModel extends Model
 ```
    
 7. **Views** <br>
-View adalah bagian dari aplikasi yang menangani tampilan atau antarmuka pengguna. Tampilan berfungsi untuk menampilkan informasi kepada pengguna dan menerima input dari mereka. Dalam CodeIgniter, tampilan biasanya berupa file-template yang berisi markup HTML atau bahasa template lainnya yang memungkinkan penggunaan variabel dan logika sederhana untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini dapat dibuat pada direktori _**app > Views**_ lalu buat views sesuai yang anda inginkan. Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php. <br>
+View adalah bagian dari aplikasi yang menangani tampilan atau antarmuka pengguna. Tampilan berfungsi untuk menampilkan informasi kepada pengguna dan menerima input dari mereka.
+Dalam CodeIgniter, tampilan biasanya berupa file-template yang berisi markup HTML atau bahasa template lainnya yang memungkinkan penggunaan variabel dan logika sederhana
+untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini dapat dibuat pada direktori _**app > Views**_ lalu buat views sesuai yang anda inginkan.
+Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php. <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b5604adb-3c82-46cf-a62b-4faece4eae52)
 
-8. **Controller**<br>
-Controller bertindak sebagai penghubung antara Model dan View. Controller mengelola logika aplikasi, menerima input dari pengguna melalui permintaan HTTP, dan memberikan respons yang sesuai. Controller digunakan untuk memproses permintaan, berinteraksi dengan Model untuk mengambil atau memanipulasi data, dan memilih tampilan yang akan ditampilkan kepada pengguna. Untuk membuat controller pada codeigniter4 ini dapat dibuat pada direktori _**app > Controllers**_ lalu buat controller sesuai yang anda inginkan. Pada contoh kali ini saya membuat controller _**Test.php.**_ <br>
+9. **Controller**<br>
+Controller bertindak sebagai penghubung antara Model dan View. Controller mengelola logika aplikasi, menerima input dari pengguna melalui permintaan HTTP, dan memberikan respons yang sesuai.
+Controller digunakan untuk memproses permintaan, berinteraksi dengan Model untuk mengambil atau memanipulasi data, dan memilih tampilan yang akan ditampilkan kepada pengguna.
+Untuk membuat controller pada codeigniter4 ini dapat dibuat pada direktori _**app > Controllers**_ lalu buat controller sesuai yang anda inginkan. Pada contoh kali ini saya membuat controller _**Test.php.**_ <br>
 Sintaks controller:
 ```
 <?php
@@ -120,7 +134,8 @@ class Test extends BaseController
     }
 }
 ```
-Fungsi dari _**return view('test');**_ adalah untuk menampilkan halaman test.php yang ada pada direktori **app / view** yang berisi tulisan _Ini contoh hasil routing_ dari sintaks test.php berikut: <br>
+Fungsi dari _**return view('test');**_ adalah untuk menampilkan halaman test.php yang ada pada direktori **app / view** 
+yang berisi tulisan _Ini contoh hasil routing_ dari sintaks test.php berikut: <br>
 ```
 <div class="container">
     <div class="row">
@@ -132,11 +147,15 @@ Fungsi dari _**return view('test');**_ adalah untuk menampilkan halaman test.php
 ```
 
 9. **Database Migration** <br>
-Migrasi database adalah perpindahan database dari suatu tempat ke tempat yang lain. Cara ini efektif apabila ingin berganti server. Misalnya PT 1 dengan PT 2 akan melakukan perpindahan lokasi penyimpanan data pada server yang digunakan, maka cara ini akan membantu anda dalam melakukannya. Berikut langkah-langkah migrasi database: <br>
+Migrasi database adalah perpindahan database dari suatu tempat ke tempat yang lain. Cara ini efektif apabila ingin berganti server.
+Misalnya PT 1 dengan PT 2 akan melakukan perpindahan lokasi penyimpanan data pada server yang digunakan, maka cara ini akan membantu anda dalam melakukannya.
+Berikut langkah-langkah migrasi database: <br>
 - 
 - 
-Selain menggunakan cara **_Migrasi Database_**, anda dapat melakukannya secara manual pada database anda dengan cara export database pada server lama anda lalu import database pada server baru anda. Cara ini tergolong cukup ribet karena apabila ada banyak database tidak akan maksimmal dalam melakukannya dan tidak efisien karena terlalu lama.
-10. **Membuat CRUD (Model)**
+Selain menggunakan cara **_Migrasi Database_**, anda dapat melakukannya secara manual pada database anda dengan cara export database pada server lama anda
+lalu import database pada server baru anda. Cara ini tergolong cukup ribet karena apabila ada banyak database tidak akan maksimmal dalam melakukannya dan tidak efisien karena terlalu lama.
+
+11. **Membuat CRUD (Model)**
 
 
 
