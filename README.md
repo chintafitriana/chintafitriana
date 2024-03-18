@@ -1,4 +1,4 @@
-![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/3153fd11-ec66-4917-91f2-56bcc053f86e)### Praktikum Pemrograman Berorientasi Framework Minggu 1👋
+### Praktikum Pemrograman Berorientasi Framework Minggu 1👋
 
 Hi,👋
 Nama: Chinta Sejatining Fitriana,
@@ -211,7 +211,7 @@ h) migrate:status untuk melihat status migrasi,<br>
 php spark migrate:status
 ```
 Output: <br>
-
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/498884f7-05ff-429b-8a27-0a8bc2dae489)
 i) make:seeder untuk membuat file seeder.<br>
 ```
 php spark make:seeder NamaSeeder
