@@ -36,7 +36,7 @@ Untuk running localhost dapat menggunakan sintaks berikut yang dapat di tuliskan
 _php spark serve_
 ```
 Sehingga muncul localhost berikut, yang dapat anda klik dengan menekan tombol _Ctrl + arahkan ke link, lalu klik_:
-![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/82fc8ae1-adab-4466-a440-95654961ccd5)
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/82fc8ae1-adab-4466-a440-95654961ccd5) <br>
 Dan akan mengarahkan pada halaman default codeigniter4, seperti berikut: <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/421518a3-0157-40e3-9a7b-74e538f90917)
 
@@ -117,7 +117,7 @@ untuk membangun tampilan yang dinamis. Untuk membuat views pada codeigniter4 ini
 Pada contoh kali ini saya membuat model Test.php. Berikut contoh output dari test.php. <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/b5604adb-3c82-46cf-a62b-4faece4eae52)
 
-9. **Controller**<br>
+8. **Controller**<br>
 Controller bertindak sebagai penghubung antara Model dan View. Controller mengelola logika aplikasi, menerima input dari pengguna melalui permintaan HTTP, dan memberikan respons yang sesuai.
 Controller digunakan untuk memproses permintaan, berinteraksi dengan Model untuk mengambil atau memanipulasi data, dan memilih tampilan yang akan ditampilkan kepada pengguna.
 Untuk membuat controller pada codeigniter4 ini dapat dibuat pada direktori _**app > Controllers**_ lalu buat controller sesuai yang anda inginkan. Pada contoh kali ini saya membuat controller _**Test.php.**_ <br>
@@ -203,7 +203,7 @@ f) migrate:refresh untuk melakukan rollback dan melakukan migrasi perubahan terb
 php spark migrate:refresh
 ```
 Output: <br>
-![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/efcdd8fa-37ae-4d7f-998e-1b5c7a66df1d)
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/efcdd8fa-37ae-4d7f-998e-1b5c7a66df1d) <br>
 Pada kode migrasi tadi, tambahkan sintaks berikut: <br>
 ```
 'created_at DATETIME DEFAULT CURRENT_TIMESTAMP'
@@ -213,12 +213,16 @@ g) migrate:rollback untuk melakukan rollback pada versi tertentu (menjalankan me
 ```
 php spark migrate:rollback
 ```
+Output: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/12570c22-c968-4399-8fe7-64f158cdfbb7) <br>
+Dia melakukan rollback ke batch 0, lalu melakukan migrasi ulang ke batch 1. <br>
+
 h) migrate:status untuk melihat status migrasi,<br>
 ```
 php spark migrate:status
 ```
 Output: <br>
-![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/498884f7-05ff-429b-8a27-0a8bc2dae489)
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/498884f7-05ff-429b-8a27-0a8bc2dae489)<br>
 i) make:seeder untuk membuat file seeder.<br>
 ```
 php spark make:seeder NamaSeeder
@@ -227,7 +231,74 @@ php spark make:seeder NamaSeeder
 Selain menggunakan cara **_Migrasi Database_**, anda dapat melakukannya secara manual pada database anda dengan cara export database pada server lama anda
 lalu import database pada server baru anda. Cara ini tergolong cukup ribet karena apabila ada banyak database tidak akan maksimmal dalam melakukannya dan tidak efisien karena terlalu lama.
 
-11. **Membuat CRUD (Model)**
+10. **Helper**<br>
+Langkah-langkah melakukan helper pada codeigniter4 adalah: <br>
+- Buat File Helper Baru:
+Buatlah file baru untuk helper di dalam direktori app/Helpers. Misalnya, jika Anda ingin membuat helper dengan nama My_helper.php, buatlah file tersebut di dalam direktori app/Helpers.
+
+- Definisikan Fungsi-fungsi dalam Helper:
+Dalam file My_helper.php, Anda dapat mendefinisikan fungsi-fungsi yang ingin Anda gunakan. Pastikan untuk memberi nama fungsi yang jelas dan mudah dimengerti.
+
+Contoh:
+```
+php
+Copy code
+<?php
+
+namespace App\Helpers;
+
+function my_custom_function()
+{
+    // Logika fungsi disini
+}
+
+function another_function($param)
+{
+    // Logika fungsi lainnya
+}
+```
+- Load Helper:
+Anda perlu memuat helper yang telah Anda buat agar dapat digunakan di seluruh aplikasi Anda. Hal ini dapat dilakukan dengan menggunakan autoload.
+
+Buka file app/Config/Services.php, lalu tambahkan nama helper Anda ke dalam autoload helper.
+```
+php
+Copy code
+public static function autoload(string $file): void
+{
+    if (is_file($file)) {
+        include_once $file;
+    }
+}
+```
+Jangan lupa untuk mengganti My_helper dengan nama file helper Anda tanpa ekstensi .php.
+
+- Panggil Fungsi Helper:
+Setelah melakukan langkah-langkah di atas, Anda dapat memanggil fungsi-fungsi dari helper Anda di mana saja dalam aplikasi Anda.
+
+Contoh:
+```
+php
+Copy code
+<?php
+
+namespace App\Controllers;
+
+use App\Controllers\BaseController;
+
+class MyController extends BaseController
+{
+    public function index()
+    {
+        // Memanggil fungsi dari helper
+        my_custom_function();
+
+        // Memanggil fungsi lainnya dengan parameter
+        another_function($param);
+    }
+}
+```
+Dengan mengikuti langkah-langkah di atas, Anda akan berhasil menambahkan dan menggunakan Helper pada CodeIgniter 4. Pastikan untuk mengganti nama file dan nama fungsi dengan yang sesuai dengan kebutuhan Anda.
 
 
 
