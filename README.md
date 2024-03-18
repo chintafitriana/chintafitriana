@@ -30,7 +30,7 @@ _composer create-project codeigniter4/appstarter nama_fileproject_
 Serta jangan lupa untuk mengubah root pada laragon/xampp yang anda gunakan agar dapat running di web server nantinya. <br> 
 Lalu ketikkan sintaks berikut untuk running aplikasi web anda melalui localhost yang disediakan. <br>
 ```
-php spark serve
+
 ```
 
 3. **Setting Development Mode** <br>
