@@ -1,4 +1,4 @@
-### Praktikum Pemrograman Berorientasi Framework Minggu 1👋
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/3153fd11-ec66-4917-91f2-56bcc053f86e)### Praktikum Pemrograman Berorientasi Framework Minggu 1👋
 
 Hi,👋
 Nama: Chinta Sejatining Fitriana,
@@ -170,7 +170,6 @@ Output: <br>
 Maka akan berada pada direktori berikut: <br>
 ![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/f56b80a6-30e7-49d6-94ec-1ea452bfb13b)
 
-
 b) db:table untuk melihat informasi tabel,<br>
 ```
 php spark db:table NamaTabel
@@ -188,19 +187,21 @@ d) migrate untuk melakukan migrasi (menjalankan method up()),<br>
 php spark migrate
 ```
 Output: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/f5e20863-540a-49c4-98f5-0040569f75ac)
 
 e) migrate:create atau make:migration untuk membuat file migrasi,<br>
 ```
 php spark make:migration NamaMigration
 ```
 Output: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/87eae721-dc73-4e6b-a9dc-e654342ba792) <br>
+Maka apabila melihat detail dari tabel migrations, akan terlihat seperti berikut: <br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/46775ca6-782f-4260-84d6-7ef1730060cb)
 
 f) migrate:refresh untuk melakukan rollback dan melakukan migrasi perubahan terbaru,<br>
 ```
 php spark migrate:refresh
 ```
-Output: <br>
-
 g) migrate:rollback untuk melakukan rollback pada versi tertentu (menjalankan method down()),<br>
 ```
 php spark migrate:rollback
@@ -209,14 +210,12 @@ h) migrate:status untuk melihat status migrasi,<br>
 ```
 php spark migrate:status
 ```
+Output: <br>
+
 i) make:seeder untuk membuat file seeder.<br>
 ```
 php spark make:seeder NamaSeeder
 ```
-Berikut langkah-langkah migrasi database: <br>
-
-- 
-
 
 Selain menggunakan cara **_Migrasi Database_**, anda dapat melakukannya secara manual pada database anda dengan cara export database pada server lama anda
 lalu import database pada server baru anda. Cara ini tergolong cukup ribet karena apabila ada banyak database tidak akan maksimmal dalam melakukannya dan tidak efisien karena terlalu lama.
