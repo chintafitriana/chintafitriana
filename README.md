@@ -234,7 +234,8 @@ lalu import database pada server baru anda. Cara ini tergolong cukup ribet karen
 10. **Helper**<br>
 Langkah-langkah melakukan helper pada codeigniter4 adalah: <br>
 - Buat File Helper Baru:
-Buatlah file baru untuk helper di dalam direktori app/Helpers. Misalnya, jika Anda ingin membuat helper dengan nama My_helper.php, buatlah file tersebut di dalam direktori app/Helpers.
+Buatlah file baru untuk helper di dalam direktori app/Helpers. Misalnya, jika Anda ingin membuat helper dengan nama My_helper.php, buatlah file tersebut di dalam direktori app/Helpers.<br>
+![image](https://github.com/chintafitriana/chintafitriana/assets/118662112/9f6f71d0-c084-4c58-8b85-5673cc16ea1a)
 
 - Definisikan Fungsi-fungsi dalam Helper:
 Dalam file My_helper.php, Anda dapat mendefinisikan fungsi-fungsi yang ingin Anda gunakan. Pastikan untuk memberi nama fungsi yang jelas dan mudah dimengerti.
