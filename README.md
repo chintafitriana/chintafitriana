@@ -131,7 +131,11 @@ Fungsi dari _**return view('test');**_ adalah untuk menampilkan halaman test.php
 </div>
 ```
 
-10. **Database Migration** 
+10. **Database Migration** <br>
+Migrasi database adalah perpindahan database dari suatu tempat ke tempat yang lain. Cara ini efektif apabila ingin berganti server. Misalnya PT 1 dengan PT 2 akan melakukan perpindahan lokasi penyimpanan data pada server yang digunakan, maka cara ini akan membantu anda dalam melakukannya. Berikut langkah-langkah migrasi database: <br>
+- 
+- 
+Selain menggunakan cara **_Migrasi Database_**, anda dapat melakukannya secara manual pada database anda dengan cara export database pada server lama anda lalu import database pada server baru anda. Cara ini tergolong cukup ribet karena apabila ada banyak database tidak akan maksimmal dalam melakukannya dan tidak efisien karena terlalu lama.
 11. **Membuat CRUD (Model)**
 
 
